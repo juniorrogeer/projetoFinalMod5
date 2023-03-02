@@ -9,8 +9,8 @@ Nome do banco de dados: funerariadb
 Distribuição de tasks:
 Nome da tabela - Responsável
 
-CLIENTE - CAIO
-DEPENDENTE - LEILA
-SERVIÇO - ENRICK
-FORNECEDOR - DAVID
-LOCAÇÕES - ROGERIO JUNIOR
+CLIENTE - CAIO <br>
+DEPENDENTE - LEILA <br>
+SERVIÇO - ENRICK <br>
+FORNECEDOR - DAVID <br>
+LOCAÇÕES - ROGERIO JUNIOR <br>
