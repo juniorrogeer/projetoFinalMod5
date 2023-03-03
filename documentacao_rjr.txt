@@ -1,0 +1,26 @@
+Distribuição de tasks:
+
+CLIENTE - CAIO
+DEPENDENTE - LEILA
+SERVIÇO - ENRICK
+FORNECEDOR - DAVID
+LOCAÇÕES - ROGERIO JUNIOR
+
+-------
+
+Criação do banco de dados com o nome 'funerariadb';
+
+Criação da tabela 'locacoes' onde estará constando as informações dos cemitérios;
+
+campos da tabela 'locacoes':
+
+id
+cnpj
+nome_locacao
+localidade
+capacidade
+
+Fonte de dados:
+https://concessionariariopax.com.br/cemiterios/
+
+----------
