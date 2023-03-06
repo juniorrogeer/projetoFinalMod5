@@ -12,5 +12,5 @@ Nome da tabela - Responsável
 CLIENTE - CAIO <br>
 DEPENDENTE - LEILA <br>
 SERVIÇO - ENRICK <br>
-FORNECEDOR - DAVID <br>
+PRODUTO - DAVID <br>
 LOCAÇÕES - ROGERIO JUNIOR <br>
