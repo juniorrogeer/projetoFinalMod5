@@ -1,0 +1,69 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="http://localhost:3000">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="http://localhost:3000">Página Inicial<span class="sr-only">(página atual)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://localhost:3000/prod">Lista de Clientes</a>
+      </li>
+            <li class="nav-item">
+        <a class="nav-link" href="http://localhost:3000/busca">Buscar Clientes</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+    </form>
+  </div>
+</nav>
+
+
+{{!-- Consulta ao banco de dados (CRUD) --}}
+<h1>Clientes cadastrados</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">NOME</th>
+      <th scope="col">CPF</th>
+      <th scope="col">TELEFONE</th>
+      <th scope="col">Visualizar</th>
+      <th scope="col">Editar</th>
+      <th scope="col">Excluir</th>
+      </tr>
+  </thead>
+  {{#each listar}}
+  <tbody>
+    <tr>
+      <th scope="row">{{this.id}}</th>
+      <td><a href="/prod/{{this.id}}">{{nome}}</a></td>
+      <td>{{cpf}} </td>
+      <td>{{telefone}} </td>
+      <td><a href="/prod/{{this.id}}"><button type="button" class="btn btn-success">Ver</button></a></td>
+       <td><a href="/prod/edit/{{this.id}}"><button type="button" class="btn btn-primary">Editar</button></a></td>
+      <td><a href="/prod/remove/{{this.id}}" ><button type="button" class="btn btn-danger">Excluir</button></a></td>
+      <!--<td><button type="button" class="btn btn-success"><a href="/prod/{{this.id}}">Ver</a></button></td> -->
+    </tr>
+  
+  </tbody>
+   {{/each}}
+</table>
+
+
+
+
+
+
+
+
+
+

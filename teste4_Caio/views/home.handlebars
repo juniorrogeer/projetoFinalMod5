@@ -1,0 +1,175 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+  <a class="navbar-brand" href="http://localhost:3000">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="http://localhost:3000">Página Inicial <span class="sr-only">(página atual)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://localhost:3000/prod">Lista de Clientes</a>
+      </li>
+            <li class="nav-item">
+        <a class="nav-link" href="http://localhost:3000/busca">Buscar Clientes</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+    </form>
+  </div>
+</nav>
+
+<br><br>
+
+<h1>Cadastro de Clientes</h1>
+    <hr>
+    <form action="prod/insertprod" method="POST">
+        <div class="form-control">
+            <input type="hidden" name="id" id="id">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" placeholder="Digite seu nome">
+        </div>
+    <br>
+             <div class="form-control">
+            <label for="cpf">CPF:</label>
+            <input type="number" name="cpf" placeholder="Digite seu cpf">
+        </div>
+    <br>
+    <div class="form-control">
+             <input type="hidden" name="idada" id="idade  ">
+            <label for="idade">Idade:</label>
+            <input type="number" name="idade" placeholder="Digite sua idade">
+</div>
+            <br>
+<div class="form-control">
+            <input type="hidden" name="id" id="id">
+            <label for="telefone">telefone:</label>
+            <input type="number" name="telefone" placeholder="Digite seu telefone">
+</div>
+        
+    <br>
+        <input type="submit" value="Cadastrar">
+    </form>
+
+<br><br><br><br><br><br><br><br><br>
+
+
+<!--footer-->
+<footer class="bg-light text-center text-lg-start">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="https://br.linkedin.com/in/enrickmagalhaes" class="text-dark">Linkedin - Enrik Magalhães</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/rogerio-sjunior" class="text-dark">Linkedin - Rogério Junior</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/david-dos-santos-coelho-96390b252" class="text-dark">Linkedin - David Coelho</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/leila-k%C3%A9ssia-a13ab117b" class="text-dark">Linkedin - Leila Kessia</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/caio-cassiano-55b24b1b4" class="text-dark">Linkedin - Caio Cassiano </a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-0">Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" class="text-dark">Link 1</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Link 2</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Link 3</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Link 4</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#!" class="text-dark">Link 1</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Link 2</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Link 3</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Link 4</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-0">Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" class="text-dark">Link 1</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Link 2</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Link 3</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Link 4</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2023 Programadores Cariocas:
+    <a class="text-dark" href="https://mdbootstrap.com/">Backend - Mode 5</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+<style>
+#navbar{
+  border: solid black 2px;
+  background-color: aqua;
+}
+
+</style>
