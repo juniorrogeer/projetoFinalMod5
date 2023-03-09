@@ -1,0 +1,37 @@
+<summary>
+<strong><h1>Seçao de Produtos</h1></strong>
+<hr>
+<ul>
+    <li><a href="/">Início</a></li>
+   <li><a href="/produto">Produtos</a> </li> 
+    <li><a href="/buscando_produto">Buscar Produtos</a></li>
+   <li><a href="/cadastro_prod">Cadastrar Produtos</a></li> 
+</ul>
+</summary>
+<hr>
+<h1>Cadastro de Produtos</h1>
+ <hr>
+    <form action="prod/insertprod" method="POST">
+        <div class="form-control">
+            <input type="hidden" name="id" id="id">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" placeholder="Digite o nome do produto">
+        </div>
+
+         <div class="form-control">
+            <label for="quant">Quantidade:</label>
+            <input type="number" name="qtd" placeholder="Digite a quantidade em estoque">
+        </div>
+         <div class="form-control">
+            <label for="quant">Fornecedor:</label>
+            <input type="text" name="fornecedor" placeholder="Digite o nome do fornecedor">
+        </div>
+
+        <input type="submit" value="Cadastrar">
+    </form>
+ <hr />
+
+    <footer>
+      <p>&copy;2023 Sistema Gerenciador de Serviços Funerários - Programadores
+        Cariocas</p>
+    </footer>    

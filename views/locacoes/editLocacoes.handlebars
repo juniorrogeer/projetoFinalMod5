@@ -1,0 +1,80 @@
+  <details>
+    <summary>
+      Menu
+    </summary>
+    <ul>
+      <li><a href="/">Início</a></li>
+      <li><a href="/cadastrarNovaLocacao">Cadastrar nova locação</a></li>
+      <li><a href="/exibirTodasLocacoes">Listar todas as locações</a></li>
+      <li><a href="/buscandoLocacao">Busca específica de locação</a></li>
+    </ul>
+  </details>
+
+  <hr />
+
+<h1>Editar dados da locação</h1>
+
+
+    <hr>
+    <form action="/exibirTodasLocacoes/updateprod" method="POST">
+        <div class="form-control">
+            <input type="hidden" name="id" id="id" value="{{prod.id}}">
+            
+<script>
+function carregar(){
+        document.getElementById("cnpj").value=localStorage.getItem("cnpj");
+}
+</script>
+            <label for="cnpj">CNPJ: </label>
+        <input onload="carregar()" type="text" name="cnpj" value="{{prod.cnpj}}" /><br />
+        <small id="cnpj" class="form-text text-muted">Altere aqui o CNPJ
+          da locação/cemitério</small>
+
+        <hr />
+
+        <label for="nome">NOME: </label>
+        <input type="text" name="nome" value="{{prod.nome_locacao}}" /><br />
+        <small id="nome" class="form-text text-muted">Altere aqui o nome
+          da locação/cemitério</small>
+
+        <hr />
+
+        <div class="form-group">
+
+          <label for="endereco">ENDEREÇO: </label>
+          <input type="text" name="endereco" value="{{prod.endereco}}" /><br />
+          <small id="endereco" class="form-text text-muted">Altere aqui o
+            endereço da locação/cemitério</small>
+
+          <hr />
+
+          <label for="localidade">LOCALIDADE: </label>
+          <input
+            type="text"
+            name="localidade"
+            value="{{prod.localidade}}"
+          /><br />
+          <small id="localidade" class="form-text text-muted">Altere aqui a localização da locação/cemitério</small>
+        </div>
+
+        <hr />
+        <div class="form-group">
+
+          <label for="capacidade">CAPACIDADE:</label>
+          <input
+            type="number"
+            name="capacidade"
+            value="{{prod.capacidade}}"
+          />
+          <br />
+          <small id="capacidade" class="form-text text-muted" value="{{prod.capacidade}}">Altere aqui a capacidade em número de vagas totais da locação/cemitério</small>
+        </div>
+    
+    <br/>
+        <input type="submit" value="Salvar alterações">
+        <button><a href="/exibirTodasLocacoes">Cancelar</a></button>
+    </form>
+
+    <footer>
+  <p>&copy;2023 Sistema Gerenciador de Serviços Funerários - Programadores Cariocas</p>
+</footer>

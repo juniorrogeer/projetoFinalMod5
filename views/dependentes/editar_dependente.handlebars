@@ -1,0 +1,29 @@
+<summary>
+<strong><h1>Dependentes</h1></strong>
+<hr>
+<ul>
+    <li><a href="/">Início</a></li>
+   <li><a href="/dependentes">Listar Dependentes</a> </li> 
+    <li><a href="/buscadep">Buscar Dependentes</a></li>
+   <li><a href="/cadastrodep">Cadastrar Novo Dependente</a></li> 
+</ul>
+</summary>
+<hr>
+
+
+<h1>Editar Dependentes</h1>
+    <hr>
+    <form action="/dependentes/updatedep" method="POST">
+        <div class="form-control">
+            <input type="hidden" name="id" id="id" value="{{prod.id}}">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome_dependente" placeholder="Digite o nome do dependente" value="{{prod.nome_dependente}}">
+        </div>
+
+         <div class="form-control">
+            <label for="quant">Cpf:</label>
+            <input type="text" name="cpf_dependente" placeholder="Digite o cpf do dependente" value="{{prod.cpf_dependente}}">
+        </div>
+    
+        <input type="submit" value="Editar">
+    </form>

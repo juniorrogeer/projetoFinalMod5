@@ -1,0 +1,87 @@
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistema Gerenciador de Serviços Funerários</title>
+
+</head>
+
+<body>
+
+  <details>
+    <summary>
+      Menu
+    </summary>
+    <ul>
+      <li><a href="/">Início</a></li>
+      <li><a href="/cadastrarNovoServico">Cadastrar novo servico</a></li>
+      <li><a href="/exibirTodosServicos">Listar todos os serviços</a></li>
+      <li><a href="/buscandoServico">Busca específica de serviços</a></li>
+    </ul>
+  </details>
+
+  <hr />
+
+  <h1>Cadastrar novo serviço</h1>
+
+  <hr />
+
+  <form action="exibirTodosServicos/insertprod" method="POST">
+    <div>
+
+      <input type="hidden" name="id" id="id" />
+
+      <label for="nome">NOME: </label>
+      <input type="text" name="nome" placeholder="Nome do serviço" /><br />
+
+
+      <hr />
+
+      <label for="preco">PREÇO: </label>
+      <input type="text" name="preco" placeholder="Preço do serviço" /><br />
+
+
+      <hr />
+
+      <div class="form-group">
+
+        <label for="embrulho">EMBRULHO: </label>
+        <input type="text" name="embrulho" placeholder="Tipo de embrulho" /><br />
+
+
+        <hr />
+
+        <label for="locacao">LOCAÇÃO: </label>
+        <input type="text" name="locacao" placeholder="Tipo de locação" /><br />
+        
+      </div>
+
+      <hr />
+      <div class="form-group">
+
+        <label for="descricao">DESCRIÇÃO:</label>
+        <input type="number" name="descricao" placeholder="Descrição" /><br />
+       
+      </div>
+
+      <!-- <div class="form-group">
+        <label for="quant">Quantidade:</label>
+        <input type="number" class="form-control-lg" name="qtd" placeholder="Digite a quantidade em estoque" />
+      </div>-->
+
+      <hr />
+
+      <input type="submit" class="btn btn-primary" value="Salvar dados" />
+    </div>
+  </form>
+
+
+  <footer>
+    <p>&copy;2023 Sistema Gerenciador de Serviços Funerários - Programadores Cariocas</p>
+  </footer>
+
+</body>
+
+</html>

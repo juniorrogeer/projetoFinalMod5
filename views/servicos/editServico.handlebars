@@ -1,0 +1,77 @@
+  <details>
+    <summary>
+      Menu
+    </summary>
+    <ul>
+      <li><a href="/">Início</a></li>
+      <li><a href="/cadastrarNovoServico">Cadastrar novo servico</a></li>
+      <li><a href="/exibirTodosServicos">Listar todos os serviços</a></li>
+      <li><a href="/buscandoServico">Busca específica de serviços</a></li>
+    </ul>
+  </details>
+
+  <hr />
+
+<h1>Editar dados do serviço</h1>
+
+
+    <hr>
+    <form action="/exibirTodosServicos/updateprod" method="POST">
+        <div class="form-control">
+            <input type="hidden" name="id" id="id" value="{{prod.id}}">
+            
+<script>
+function carregar(){
+        document.getElementById("nome").value=localStorage.getItem("nome");
+}
+</script>
+            <label for="nome">CNPJ: </label>
+        <input onload="carregar()" type="text" name="nome" value="{{prod.nome}}" /><br />
+
+
+        <hr />
+
+        <label for="preco">PREÇO: </label>
+        <input type="text" name="preco" value="{{prod.preco}}" /><br />
+
+
+        <hr />
+
+        <div class="form-group">
+
+          <label for="embrulho">EMBRULHO: </label>
+          <input type="text" name="embrulho" value="{{prod.embrulho}}" /><br />
+
+
+          <hr />
+
+          <label for="locacao">LOCALIDADE: </label>
+          <input
+            type="text"
+            name="locacao"
+            value="{{prod.locacao}}"
+          /><br />
+
+        </div>
+
+        <hr />
+        <div class="form-group">
+
+          <label for="descricao">DESCRIÇÃO:</label>
+          <input
+            type="text"
+            name="descricao"
+            value="{{prod.descricao}}"
+          />
+          <br />
+
+        </div>
+    
+    <br/>
+        <input type="submit" value="Salvar alterações">
+        <button><a href="/exibirTodosServicos">Cancelar</a></button>
+    </form>
+
+    <footer>
+  <p>&copy;2023 Sistema Gerenciador de Serviços Funerários - Programadores Cariocas</p>
+</footer>

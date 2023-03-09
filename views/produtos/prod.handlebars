@@ -1,0 +1,28 @@
+<summary>
+<strong><h1>Seçao de Produtos</h1></strong>
+<hr>
+<ul>
+    <li><a href="/">Início</a></li>
+   <li><a href="/produto">Produtos</a> </li> 
+    <li><a href="/buscando_produto">Buscar Produtos</a></li>
+   <li><a href="/cadastro_prod">Cadastrar Produtos</a></li> 
+</ul>
+</summary>
+<hr>
+<h1> Produtos Cadastrados</h1>
+
+<div class="prod-container">
+    {{#each listar}}
+
+    <strong>#{{this.id}}</strong> -
+    <a href="/produto/{{this.id}}">{{nome}}</a> - quantidade em estoque {{qtd}} - fornecedor {{fornecedor}} <br>
+
+    {{/each}}
+
+</div>
+ <hr />
+
+    <footer>
+      <p>&copy;2023 Sistema Gerenciador de Serviços Funerários - Programadores
+        Cariocas</p>
+    </footer>

@@ -1,0 +1,41 @@
+  <details>
+    <summary>
+      Menu
+    </summary>
+    <ul>
+      <li><a href="/">Início</a></li>
+      <li><a href="/cadastroCliente">Cadastrar novo Cliente</a></li>
+      <li><a href="/listarTodosClientes">Listar todas os Clientes</a></li>
+      <li><a href="/buscarCliente">Busca específica Clientes</a></li>
+    </ul>
+  </details>
+
+  <hr />
+
+{{!-- Consulta ao banco de dados (CRUD) --}}
+<h1>Clientes cadastrados</h1>
+
+  {{#each listar}}
+      # {{this.id}} - 
+      <a href="/listarTodosClientes/{{this.id}}">{{this.nome}}</a><br/>
+      CPF: {{cpf}} <br/>
+      IDADE: {{idade}} <br/>
+      TELEFONE: {{telefone}}
+      <br/> 
+      <a href="/listarTodosClientes/{{this.id}}"><button type="button" class="btn btn-success">Ver</button></a>
+       <a href="/listarTodosClientes/editarCliente/{{this.id}}"><button type="button" class="btn btn-primary">Editar</button></a>
+      <a href="/listarTodosClientes/remove/{{this.id}}" ><button type="button" class="btn btn-danger">Excluir</button></a>
+      <br/>
+      <br/>
+   {{/each}}
+
+
+
+
+
+
+
+
+
+
+

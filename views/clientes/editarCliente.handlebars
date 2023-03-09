@@ -1,0 +1,41 @@
+ <details>
+    <summary>
+      Menu
+    </summary>
+    <ul>
+      <li><a href="/">Início</a></li>
+      <li><a href="/cadastroCliente">Cadastrar novo Cliente</a></li>
+      <li><a href="/listarTodosClientes">Listar todas os Clientes</a></li>
+      <li><a href="/buscarCliente">Busca específica Clientes</a></li>
+    </ul>
+  </details>
+
+  <hr />
+
+
+
+<h1>Editar dados do cliente</h1>
+    <hr>
+    <form action="/detalheIndividualCliente/updateprod" method="POST">
+        <div class="form-control">
+            <input type="hidden" name="id" id="id" value="{{prod.id}}">
+            <label for="nomecliente">Nome:</label>
+            <input type="text" name="nomecliente" id="nomecliente" placeholder="Digite o nome do produto" value="{{prod.nome}}">
+        </div>
+
+            <div class="form-control">
+            <label for="cpfcliente">CPF:</label>
+            <input type="text" name="cpfcliente" placeholder="Digite seu cpf" value="{{prod.cpf}}">
+        </div>
+
+    <div class="form-control">
+            <label for="idadecliente">Idade:</label>
+            <input type="number" name="idadecliente" placeholder="Digite sua idade" value="{{prod.idade}}">
+        </div>
+
+            <div class="form-control">
+            <label for="telefonecliente">telefone:</label>
+            <input type="text" name="telefonecliente" placeholder="Digite seu telefone" value="{{prod.telefone}}">
+        </div>
+        <input type="submit" value="Editar"   >
+    </form>

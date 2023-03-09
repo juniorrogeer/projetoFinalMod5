@@ -1,0 +1,33 @@
+<details>
+  <summary>
+    Menu
+  </summary>
+  <ul>
+    <li><a href="/">Início</a></li>
+    <li><a href="/cadastrarNovoServico">Cadastrar novo servico</a></li>
+    <li><a href="/exibirTodosServicos">Listar todos os serviços</a></li>
+    <li><a href="/buscandoServico">Busca específica de serviços</a></li>
+  </ul>
+</details>
+
+<hr />
+
+<h1>Detalhamento do serviço</h1> | <small><a href="/exibirTodosServicos">Voltar à lista geral</a></small>
+
+<hr />
+
+<h2>#{{listarProd.id}} {{listarProd.nome}} </h2>
+
+<p>Preço: <b>{{listarProd.preco}}</b><br />
+Embrulho: <b>{{listarProd.embrulho}}</b> <br />
+Tipo de Locação: <b>{{listarProd.locacao}}</b><br />
+Descrição: <b>{{listarProd.descricao}}</b> <br />
+</p>
+
+<a href="/exibirTodosServicos/editServico/{{listarProd.id}}">Editar</a>
+
+<a href="/exibirTodosServicos/remove/{{listarProd.id}}">Excluir</a>
+
+<footer>
+  <p>&copy;2023 Sistema Gerenciador de Serviços Funerários - Programadores Cariocas</p>
+</footer>

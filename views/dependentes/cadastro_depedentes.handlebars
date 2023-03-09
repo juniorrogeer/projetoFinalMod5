@@ -1,0 +1,46 @@
+<!--espaço para o navbar-->
+<summary>
+<strong><h1>Dependentes</h1></strong>
+<hr>
+<ul>
+    <li><a href="/">Início</a></li>
+   <li><a href="/dependentes">Listar Dependentes</a> </li> 
+    <li><a href="/buscadep">Buscar Dependentes</a></li>
+   <li><a href="/cadastrodep">Cadastrar Novo Dependente</a></li> 
+</ul>
+</summary>
+<hr>
+
+
+<!--cadastro-->
+<h1>Cadastro de dependentes</h1>
+    <hr>
+    <form action="dependente/insertdep" method="POST">
+        <div class="form-control">
+            <input type="hidden" name="id" id="id">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome_dependente" placeholder="Digite o nome do dependente">
+        </div>
+<br>
+         <div class="form-control">
+            <label for="quantidade">Cpf:</label>
+            <input type="text" name="cpf_dependente" placeholder="Digite o cpf do seu dependente">
+        </div>
+<br>
+         <div class="form-control">
+            <label for="quantidade">Grau de parentesco:</label>
+            <input type="text" name="grau_de_parentesco" placeholder="Digite o grau de parentesco">
+        </div>
+<br>
+        <div class="form-control">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome_titular" placeholder="Digite o nome do titular">
+        </div>
+<br>
+         <div class="form-control">
+            <label for="quantidade">Cpf titular:</label>
+            <input type="text" name="cpf_titular" placeholder="Digite o cpf do titular">
+        </div>
+<br>
+        <input type="submit" value="Cadastrar">
+    </form>

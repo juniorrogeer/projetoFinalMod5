@@ -1,0 +1,28 @@
+<summary>
+<strong><h1>Dependentes</h1></strong>
+<hr>
+<ul>
+    <li><a href="/">Início</a></li>
+   <li><a href="/dependentes">Listar Dependentes</a> </li> 
+    <li><a href="/buscadep">Buscar Dependentes</a></li>
+   <li><a href="/cadastrodep">Cadastrar Novo Dependente</a></li> 
+</ul>
+</summary>
+<hr>
+
+
+{{!-- Consulta ao banco de dados (CRUD) --}}
+<h1>Dependentes cadastrados</h1>
+
+<div class="prod-container">
+    {{#each listar}}
+     
+    <strong> #{{this.id}} </strong> -  
+    <a href="/dependentes/{{this.id}}">{{this.nome_dependente}}</a> - cpf: {{this.cpf_dependente}}  <br>
+
+    {{/each}}
+
+</div>
+
+
+

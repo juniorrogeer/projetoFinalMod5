@@ -1,0 +1,23 @@
+ <details>
+    <summary>
+      Menu
+    </summary>
+    <ul>
+      <li><a href="/">Início</a></li>
+      <li><a href="/cadastroCliente">Cadastrar novo Cliente</a></li>
+      <li><a href="/listarTodosClientes">Listar todas os Clientes</a></li>
+      <li><a href="/buscarCliente">Busca específica Clientes</a></li>
+    </ul>
+  </details>
+
+  <hr />
+
+<h1>Cliente</h1>
+      
+         
+<h1> {{listarProd.nome}} </h1>
+
+<p>Este cliente é portador do CPF {{listarProd.cpf}}.</p>
+
+<a href="/listarTodosClientes/editarCliente/{{listarProd.id}}">Editar</a>
+<a href="/listarTodosClientes/remove/{{listarProd.id}}" >excluir</a>

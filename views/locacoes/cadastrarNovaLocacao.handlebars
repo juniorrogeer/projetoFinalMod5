@@ -1,0 +1,92 @@
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistema Gerenciador de Serviços Funerários</title>
+
+</head>
+
+<body>
+
+  <details>
+    <summary>
+      Menu
+    </summary>
+    <ul>
+      <li><a href="/">Início</a></li>
+      <li><a href="/cadastrarNovaLocacao">Cadastrar nova locação</a></li>
+      <li><a href="/exibirTodasLocacoes">Listar todas as locações</a></li>
+      <li><a href="/buscandoLocacao">Busca específica de locação</a></li>
+    </ul>
+  </details>
+
+  <hr />
+
+  <h1>Cadastrar nova locação</h1>
+
+  <hr />
+
+  <form action="exibirTodasLocacoes/insertprod" method="POST">
+    <div>
+
+      <input type="hidden" name="id" id="id" />
+
+      <label for="cnpj">CNPJ: </label>
+      <input type="text" name="cnpj" placeholder="CNPJ da locação" /><br />
+      <small id="cnpj" class="form-text text-muted">Informe neste campo o CNPJ
+        da locação/cemitério</small>
+
+      <hr />
+
+      <label for="nome">NOME: </label>
+      <input type="text" name="nome" placeholder="Nome da locação" /><br />
+      <small id="nome" class="form-text text-muted">Informe neste campo o nome
+        da locação/cemitério</small>
+
+      <hr />
+
+      <div class="form-group">
+
+        <label for="endereco">ENDEREÇO: </label>
+        <input type="text" name="endereco" placeholder="Nome da locação" /><br />
+        <small id="endereco" class="form-text text-muted">Informe neste campo o
+          endereço da locação/cemitério</small>
+
+        <hr />
+
+        <label for="localidade">LOCALIDADE: </label>
+        <input type="text" name="localidade" placeholder="Localidade da locação" /><br />
+        <small id="localidade" class="form-text text-muted">Informe neste
+          campo a localização da locação/cemitério</small>
+      </div>
+
+      <hr />
+      <div class="form-group">
+
+        <label for="capacidade">CAPACIDADE:</label>
+        <input type="number" name="capacidade" placeholder="Capacidade da locação" /><br />
+        <small id="capacidade" class="form-text text-muted">Informe neste
+          campo a capacidade em número de vagas totais da locação/cemitério</small>
+      </div>
+
+      <!-- <div class="form-group">
+        <label for="quant">Quantidade:</label>
+        <input type="number" class="form-control-lg" name="qtd" placeholder="Digite a quantidade em estoque" />
+      </div>-->
+
+      <hr />
+
+      <input type="submit" class="btn btn-primary" value="Salvar dados" />
+    </div>
+  </form>
+
+
+  <footer>
+    <p>&copy;2023 Sistema Gerenciador de Serviços Funerários - Programadores Cariocas</p>
+  </footer>
+
+</body>
+
+</html>

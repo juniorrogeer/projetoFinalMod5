@@ -1,0 +1,52 @@
+<details>
+  <summary>
+    Menu
+  </summary>
+  <ul>
+    <li><a href="/">Início</a></li>
+    <li><a href="/cadastrarNovaLocacao">Cadastrar nova locação</a></li>
+    <li><a href="/exibirTodasLocacoes">Listar todas as locações</a></li>
+    <li><a href="/buscandoLocacao">Busca específica de locação</a></li>
+  </ul>
+</details>
+
+<hr />
+
+<h1>Locações cemiteriais parceiras</h1>
+
+<hr />
+<form action="/buscandoLocacao/" method="post">
+
+  <input type="text" name="nome" id="nome" placeholder="Pesquise pelo #nome" />
+
+  <input type="submit" value="Buscar" />
+</form>
+<hr />
+
+<div class="prod-container">
+  {{#each listar}}
+
+    <h3>
+      <a href="/exibirTodasLocacoes/{{this.id}}">#{{this.id}}
+        - Locação
+        {{nome_locacao}}<br /></a>
+      <small>
+        CNPJ:
+        {{this.cnpj}}
+        <br />
+
+        Capacidade:
+        {{capacidade}}</small><br />
+
+    </h3>
+
+    <hr />
+
+  {{/each}}
+
+</div>
+
+<footer>
+  <p>&copy;2023 Sistema Gerenciador de Serviços Funerários - Programadores
+    Cariocas</p>
+</footer>

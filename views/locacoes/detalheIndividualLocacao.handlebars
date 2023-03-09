@@ -1,0 +1,31 @@
+  <details>
+    <summary>
+      Menu
+    </summary>
+    <ul>
+      <li><a href="/">Início</a></li>
+      <li><a href="/cadastrarNovaLocacao">Cadastrar nova locação</a></li>
+      <li><a href="/exibirTodasLocacoes">Listar todas as locações</a></li>
+      <li><a href="/buscandoLocacao">Busca específica de locação</a></li>
+    </ul>
+  </details>
+
+  <hr />
+
+<h1>Detalhamento da locação</h1>  | <small><a href="/exibirTodasLocacoes">Voltar à lista geral</a></small>
+      
+      <hr/>
+         
+<h2>#{{listarProd.id}} {{listarProd.nome_locacao}} </h2>
+
+    Endereço: <b>{{listarProd.endereco}}</b><br/> 
+    Localidade: <b>{{listarProd.localidade}}</b> <br/>
+    Quantidade de vagas: <b>{{listarProd.capacidade}}</b> vagas.</p>
+
+<a href="/exibirTodasLocacoes/editLocacoes/{{listarProd.id}}">Editar</a>
+
+<a href="/exibirTodasLocacoes/remove/{{listarProd.id}}" >Excluir</a>
+
+<footer>
+  <p>&copy;2023 Sistema Gerenciador de Serviços Funerários - Programadores Cariocas</p>
+</footer>
